@@ -586,9 +586,24 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page:nth-of-type(2) .input:nt
   color: white;
   border: none;
 }
-#uploadbtn{
+.uploadbtn{
   padding: 4px 60px;
   background-color: #2ccdff;
   color: white;
   border: none;
+}
+
+
+.upload-btn-wrapper input[type=file] {
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  
+}
+.upload-btn-wrapper {
+  position: relative;
+ 
+  display: inline-block;
 }
