@@ -1,7 +1,15 @@
 import React from "react"
+import {Helmet} from "react-helmet";
+import axios from 'axios';
+
+<Helmet>
+    <script src="resource.js" type="text/javascript"> </script>
+</Helmet>
+
 
 function Uploadimg() {
-  return (
+
+return (
  <div className="uploadimg">
 <div class="container">
     <div class="row" style={{marginTop:"3%",marginBottom:"3%"}}>
@@ -37,8 +45,8 @@ function Uploadimg() {
         </div>
 
 
-        <div class="col-md-3">
-        <div class="card">
+<div class="col-md-3">
+<div class="card">
     <div class="card-body">
      <div class="row">
          <div class="col-md-4">
@@ -49,8 +57,8 @@ function Uploadimg() {
          </div>
      </div>
     </div>
- </div>
-        </div>
+</div>
+   </div>
 
 
         <div class="col-md-3">
@@ -83,14 +91,14 @@ function Uploadimg() {
 
 <div class="col-md-8">
 <div class="card">
-<div style={{padding:"13% 13%",backgroundColor:"white"}}>
+<div style={{padding:"17% 8%",backgroundColor:"white"}}>
         <p style={{textAlign:"center",fontSize:"25px"}} class="card-text">Select a service and <br/>upload your images</p>
        
        <div class="text-center">
         <div class="upload-btn-wrapper">
                  <i class="fa fa-cloud-upload" style={{fontSize:"80px"}}></i> <br/>
                 
-            <button class="uploadbtn">Upload a file</button>
+            <button style={{marginTop:"8%"}} class="uploadbtn">Upload a file</button>
             <input type="file" name="myfile" />
         </div>
         </div>
@@ -118,15 +126,16 @@ function Uploadimg() {
  </div>
 
 
-
-
-
-
+    <button onChange={"loadFile(event)"}>abcde</button>
+     
 
 
  </div>
 </div>
   );
 }
+
+
+
 
 export default Uploadimg;
